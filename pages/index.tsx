@@ -15,13 +15,13 @@ export default function Home() {
           <h1 data-aos='fade-down' data-aos-duration="1000" className='mt-[40vh] text-9xl'>
             oi!
           </h1>
-          <Image data-aos='fade-up' data-aos-duration="1000" data-aos-delay="900" className='' width={60} height={60} src={'/arrowdown.png'} alt='' />
+          <Image data-aos='fade-up' data-aos-duration="1000" data-aos-delay="900" className='pb-[30vh]' width={60} height={60} src={'/arrowdown.png'} alt='' />
         </div>
         
         <div className='h-[50vh] flex flex-col items-center'>
           <Image data-aos='fade-up' className='w-1/2 mt-20 lg:w-1/5' src={'/mateusmemoji.gif'} alt={'memoji'} width={600} height={450}/>
-          <p data-aos='fade-right' data-aos-duration="700" className='py-5 text-2xl'>Meu nome é Mateus</p>
-          <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="500" className='text-2xl'>Sou desenvolvedor web</p> 
+          <p data-aos='fade-right' data-aos-duration="700" className='py-5 text-2xl'>meu nome é Mateus</p>
+          <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="500" className='text-2xl'>sou desenvolvedor web</p> 
         </div>
         <div className='h-[100vh] py-12 flex flex-col items-center justify-center'>
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='flex items-center justify-center text-2xl pb-5'>ou seja:</p>
