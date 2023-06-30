@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main
-      className={`min-h-screen bg-black ${inter.className}`}
+      className={`min-h-screen bg-black text-white ${inter.className}`}
     >
       <div className='overflow-hidden'>
         <h1 data-aos='fade-down' data-aos-duration="1000" className='flex items-center justify-center h-[100vh] text-9xl p-12 lg:p-24'>
