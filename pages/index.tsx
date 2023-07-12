@@ -30,9 +30,9 @@ export default function Home() {
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="800" className='flex items-center justify-center text-8xl lg:text-9xl'>sites!</p>
         </div>
         <div className='h-[100vh] py-12'>
-          <p data-aos='fade-left' data-aos-duration="700" className='pl-12 pb-5 lg:pl-24 lg:pb-5 text-2xl'>tá querendo um site novo?</p>
-          <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="400" className='pl-12 pb-16 lg:pl-24 text-2xl'>me chama:</p>
-          <div data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='flex flex-wrap justify-evenly lg:grid-cols-5 mx-12 lg:mx-24'>
+          <p data-aos='fade-left' data-aos-duration="700" className='pl-10 pb-5 lg:pl-24 text-2xl'>tá querendo um site novo?</p>
+          <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="400" className='pl-10 pb-16 lg:pl-24 text-2xl'>me chama:</p>
+          <div data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='hidden lg:flex flex-wrap justify-evenly lg:grid-cols-5 mx-12 lg:mx-24'>
             <motion.div
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl"
             whileHover={{ scale: 1.2, borderRadius: "100%", rotate: 20 }}
@@ -77,6 +77,43 @@ export default function Home() {
                 <Image className='text-black fill-red-500 absolute' src={'/github.svg'} width={80} height={80} alt='whatsapp'/>
               </a>
             </motion.div>
+          </div>
+
+          <div data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='lg:hidden flex flex-wrap justify-evenly lg:grid-cols-5 mx-12 lg:mx-24'>
+            <div
+            className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
+              <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://wa.me/5511959375818'>
+                <Image className='text-black fill-red-500 absolute' src={'/whatsapp.svg'} width={80} height={80} alt='whatsapp'/>
+              </a>
+            </div>
+
+            <div
+            className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
+              <a className='flex justify-center w-full h-full items-center' target='_blank' href='mailto:mateuspachecosete@gmail.com?subject=Cotação de Site'>
+                <Image className='text-black fill-red-500 absolute' src={'/gmail.svg'} width={80} height={80} alt='whatsapp'/>
+              </a>
+            </div>
+
+            <div
+            className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
+              <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://www.linkedin.com/in/mateus-pacheco-petrin/'>
+                <Image className='text-black fill-red-500 absolute' src={'/linkedin.svg'} width={80} height={80} alt='whatsapp'/>
+              </a>
+            </div>
+
+            <div
+            className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
+              <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://www.instagram.com/pacheco_mateus/'>
+                <Image className='text-black fill-red-500 absolute' src={'/instagram.svg'} width={80} height={80} alt='whatsapp'/>
+              </a>
+            </div>
+
+            <div
+            className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
+              <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://github.com/pachecomateus'>
+                <Image className='text-black fill-red-500 absolute' src={'/github.svg'} width={80} height={80} alt='whatsapp'/>
+              </a>
+            </div>
           </div>
           
         </div>
