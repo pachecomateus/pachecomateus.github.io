@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +16,13 @@ export default function Home() {
           <h1 data-aos='fade-down' data-aos-duration="1000" className='mt-[40vh] text-9xl'>
             oi!
           </h1>
-          <Image data-aos='fade-up' data-aos-duration="1000" data-aos-delay="900" className='pb-[30vh]' width={60} height={60} src={'/arrowdown.png'} alt='' />
+          <Link href={'#memoji'} passHref={true}>
+            <Image data-aos='fade-up' data-aos-duration="1000" data-aos-delay="900" className='pb-[30vh]' width={60} height={60} src={'/arrowdown.png'} alt='' />
+          </Link>
         </div>
         
-        <div className='h-[50vh] flex flex-col items-center'>
-          <Image data-aos='fade-up' className='w-1/2 mt-20 md:w-1/5' src={'/mateusmemoji.gif'} alt={'memoji'} width={600} height={450}/>
+        <div id='memoji' className='h-[100vh] flex flex-col items-center justify-center'>
+          <Image data-aos='fade-up' className='w-1/2 md:w-1/5' src={'/mateusmemoji.gif'} alt={'memoji'} width={600} height={450}/>
           <p data-aos='fade-right' data-aos-duration="700" className='py-5 text-2xl'>meu nome é Mateus</p>
           <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="500" className='text-2xl'>sou desenvolvedor web</p> 
         </div>
@@ -29,9 +32,9 @@ export default function Home() {
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="700" className='flex items-center justify-center text-8xl md:text-9xl'>faço</p>
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="800" className='flex items-center justify-center text-8xl md:text-9xl'>sites!</p>
         </div>
-        <div className='h-[100vh] py-12'>
+        <div className='h-[100vh] py-12 flex flex-col justify-center'>
           <p data-aos='fade-left' data-aos-duration="700" className='pl-10 pb-5 md:pl-24 text-2xl'>tá querendo um site novo?</p>
-          <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="400" className='pl-10 pb-16 md:pl-24 text-2xl'>me chama:</p>
+          <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="300" className='pl-10 pb-16 md:pl-24 text-2xl'>me chama:</p>
           <div data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='hidden md:flex flex-wrap justify-evenly md:grid-cols-5 mx-12 md:mx-24'>
             <motion.div
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl"
@@ -79,8 +82,9 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='md:hidden flex flex-wrap justify-evenly md:grid-cols-5 mx-12 md:mx-24'>
+          <div className='md:hidden flex flex-wrap justify-evenly md:grid-cols-5 mx-12 md:mx-24'>
             <div
+            data-aos='fade-up' data-aos-duration="700" data-aos-delay="500"
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
               <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://wa.me/5511959375818' rel="noreferrer">
                 <Image className='text-black fill-red-500 absolute' src={'/whatsapp.svg'} width={80} height={80} alt='whatsapp'/>
@@ -88,6 +92,7 @@ export default function Home() {
             </div>
 
             <div
+            data-aos='fade-up' data-aos-duration="700" data-aos-delay="600"
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
               <a className='flex justify-center w-full h-full items-center' target='_blank' href='mailto:mateuspachecosete@gmail.com?subject=Cotação de Site' rel="noreferrer">
                 <Image className='text-black fill-red-500 absolute' src={'/gmail.svg'} width={80} height={80} alt='whatsapp'/>
@@ -95,6 +100,7 @@ export default function Home() {
             </div>
 
             <div
+            data-aos='fade-up' data-aos-duration="700" data-aos-delay="700"
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
               <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://www.linkedin.com/in/mateus-pacheco-petrin/' rel="noreferrer">
                 <Image className='text-black fill-red-500 absolute' src={'/linkedin.svg'} width={80} height={80} alt='whatsapp'/>
@@ -102,6 +108,7 @@ export default function Home() {
             </div>
 
             <div
+            data-aos='fade-up' data-aos-duration="700" data-aos-delay="800"
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
               <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://www.instagram.com/pacheco_mateus/' rel="noreferrer">
                 <Image className='text-black fill-red-500 absolute' src={'/instagram.svg'} width={80} height={80} alt='whatsapp'/>
@@ -109,6 +116,7 @@ export default function Home() {
             </div>
 
             <div
+            data-aos='fade-up' data-aos-duration="700" data-aos-delay="900"
             className="container cursor-pointer w-[120px] h-[120px] mx-3 my-3 flex justify-center items-center bg-white rounded-3xl">
               <a className='flex justify-center w-full h-full items-center' target='_blank' href='https://github.com/pachecomateus' rel="noreferrer">
                 <Image className='text-black fill-red-500 absolute' src={'/github.svg'} width={80} height={80} alt='whatsapp'/>
