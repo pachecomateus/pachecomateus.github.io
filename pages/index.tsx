@@ -3,10 +3,15 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import { ParallaxBanner } from 'react-scroll-parallax';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  // let image = document.getElementsByClassName('parallax');
+  // new SimpleParallax(image);
+
   return (
     <main
       className={`min-h-screen bg-black text-white ${inter.className}`}
@@ -26,12 +31,52 @@ export default function Home() {
           <p data-aos='fade-right' data-aos-duration="700" className='py-5 text-2xl'>meu nome é Mateus</p>
           <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="500" className='text-2xl'>sou desenvolvedor web</p> 
         </div>
+
         <div className='h-[100vh] py-12 flex flex-col items-center justify-center'>
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="500" className='flex items-center justify-center text-2xl pb-5'>ou seja:</p>
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="600" className='flex items-center justify-center text-8xl md:text-9xl'>eu</p>
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="700" className='flex items-center justify-center text-8xl md:text-9xl'>faço</p>
           <p data-aos='fade-up' data-aos-duration="700" data-aos-delay="800" className='flex items-center justify-center text-8xl md:text-9xl'>sites!</p>
         </div>
+
+
+        
+        <div className='py-12 flex flex-col'>
+          <p data-aos='fade-left' data-aos-duration="700" className='text-center md:text-left py-5 md:pl-24 text-2xl'>alguns projetos que participei:</p>
+          
+          <a href='https://www.casategra.com.br' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
+            <p className='py-10 text-2xl text-center'>Casa Tegra</p>
+            <ParallaxBanner
+            layers={[{ image: 'casa-tegra.jpg', speed: 10 }]}
+            className="aspect-[3/1]">
+            </ParallaxBanner>
+          </a> 
+
+          <a href='https://www.elizabethrevestimentos.com.br' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
+            <p className='py-10 text-2xl text-center'>Elizabeth Revestimentos</p>
+            <ParallaxBanner
+            layers={[{ image: 'elizabeth.jpg', speed: -10 }]}
+            className="aspect-[3/1]">
+            </ParallaxBanner>
+          </a>
+
+          <a href='https://sioux.ag' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
+            <p className='py-10 text-2xl text-center'>Sioux Digital 1:1</p>
+            <ParallaxBanner
+            layers={[{ image: 'sioux.jpg', speed: 10 }]}
+            className="aspect-[3/1]">
+            </ParallaxBanner>
+          </a> 
+
+          <a href='https://vitacon.com.br' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
+            <p className='py-10 text-2xl text-center'>Vitacon</p>
+            <ParallaxBanner
+            layers={[{ image: 'vitacon.jpg', speed: -10 }]}
+            className="aspect-[3/1]">
+            </ParallaxBanner>
+          </a>
+        </div>
+
         <div className='h-[100vh] py-12 flex flex-col justify-center'>
           <p data-aos='fade-left' data-aos-duration="700" className='pl-10 pb-5 md:pl-24 text-2xl'>tá querendo um site novo?</p>
           <p data-aos='fade-left' data-aos-duration="700" data-aos-delay="300" className='pl-10 pb-16 md:pl-24 text-2xl'>me chama:</p>
@@ -123,8 +168,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          
         </div>
+
       </div>
     </main>
   )
