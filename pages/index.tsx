@@ -48,48 +48,82 @@ export default function Home() {
 
 
 
-        <div className='py-12 flex flex-col'>
-          <p data-aos='fade-left' data-aos-duration="700" className='text-center md:text-left py-5 md:pl-24 text-2xl'>alguns projetos que participei:</p>
+        <div className='py-12 flex flex-col items-center'>
+          <p data-aos='fade-left' data-aos-duration="700" className='text-center py-5 text-2xl'>alguns projetos que participei:</p>
 
-          <a href='https://www.casategra.com.br' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
-            <p className='py-10 text-2xl text-center'>Casa Tegra</p>
-            <ParallaxBanner
-              layers={[{ image: 'casa-tegra.jpg', speed: 10 }]}
-              className="aspect-[3/1]">
-            </ParallaxBanner>
-          </a>
+          <div className='flex flex-wrap justify-center mt-10'>
 
-          <a href='https://www.seedincorp.com.br/' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
-            <p className='py-10 text-2xl text-center'>Seed Incorp</p>
-            <ParallaxBanner
-              layers={[{ image: 'seed.png', speed: -10 }]}
-              className="aspect-[3/1]">
-            </ParallaxBanner>
-          </a>
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-right' data-aos-duration="700" className='mt-10'>Casa Tegra</p>
+              <a data-aos='fade-right' data-aos-duration="700" href='https://www.casategra.com.br' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/casa-tegra.jpg')] bg-cover bg-no-repeat bg-center md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
 
-          <a href='https://sioux.ag' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
-            <p className='py-10 text-2xl text-center'>Sioux Digital 1:1</p>
-            <ParallaxBanner
-              layers={[{ image: 'sioux.jpg', speed: 10 }]}
-              className="aspect-[3/1]">
-            </ParallaxBanner>
-          </a>
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-left' data-aos-duration="700" className='mt-10'>Seed Incorp</p>
+              <a data-aos='fade-left' data-aos-duration="700" href='https://www.seedincorp.com.br/' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/seed.png')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
 
-          <a href='https://vitacon.com.br' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
-            <p className='py-10 text-2xl text-center'>Vitacon</p>
-            <ParallaxBanner
-              layers={[{ image: 'vitacon.jpg', speed: -10 }]}
-              className="aspect-[3/1]">
-            </ParallaxBanner>
-          </a>
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-right' data-aos-duration="700" className='mt-10'>Seed Incorp</p>
+              <a data-aos='fade-right' data-aos-duration="700" href='https://sioux.ag' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/sioux.jpg')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
 
-          <a href='https://www.elizabethrevestimentos.com.br' target='_blank' className='pt-12 md:pt-24 hover:opacity-80 hover:transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-100 duration-300	z-50'>
-            <p className='py-10 text-2xl text-center'>Elizabeth Revestimentos</p>
-            <ParallaxBanner
-              layers={[{ image: 'elizabeth.jpg', speed: 10 }]}
-              className="aspect-[3/1]">
-            </ParallaxBanner>
-          </a>
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-left' data-aos-duration="700" className='mt-10'>Seed Incorp</p>
+              <a data-aos='fade-left' data-aos-duration="700" href='https://vitacon.com.br' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/vitacon.jpg')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
+
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-right' data-aos-duration="700" className='mt-10'>Seed Incorp</p>
+              <a data-aos='fade-right' data-aos-duration="700" href='https://www.elizabethrevestimentos.com.br' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/elizabeth.jpg')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
+
+          </div>
         </div>
 
         <div className='h-[100vh] py-12 flex flex-col justify-center'>
