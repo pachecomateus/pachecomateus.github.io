@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import { motion } from "framer-motion";
 import Link from 'next/link';
-import { ParallaxBanner } from 'react-scroll-parallax';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -82,10 +81,52 @@ export default function Home() {
             </div>
 
             <div className='flex flex-col items-center'>
-              <p data-aos='fade-right' data-aos-duration="700" className='mt-10'>Sioux Digital 1:1</p>
+              <p data-aos='fade-left' data-aos-duration="700" className='mt-10'>Ampere Brooklin</p>
+              <a data-aos='fade-left' data-aos-duration="700" href='https://www.amperebrooklin.com.br/' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/ampere.png')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
+
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-left' data-aos-duration="700" className='mt-10'>Tegra</p>
+              <a data-aos='fade-left' data-aos-duration="700" href='https://www.tegraincorporadora.com.br/' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/tegra.png')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
+
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-right' data-aos-duration="700" className='mt-10'>Sioux digital 1:1</p>
               <a data-aos='fade-right' data-aos-duration="700" href='https://sioux.ag' target='_blank' className=''>
                 <motion.div
                   className="cursor-pointer bg-[url('../public/sioux.jpg')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{
+                  scale: 0.8,
+                  borderRadius: "24px"
+                }}>
+                </motion.div>
+              </a>
+            </div>
+
+            <div className='flex flex-col items-center'>
+              <p data-aos='fade-left' data-aos-duration="700" className='mt-10'>Solidi Engenharia</p>
+              <a data-aos='fade-left' data-aos-duration="700" href='https://www.solidi.com.br/' target='_blank' className=''>
+                <motion.div
+                  className="cursor-pointer bg-[url('../public/solid.png')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{
                   scale: 0.8,
@@ -110,24 +151,10 @@ export default function Home() {
             </div>
 
             <div className='flex flex-col items-center'>
-              <p data-aos='fade-right' data-aos-duration="700" className='mt-10'>Elizabeth Revestimentos</p>
-              <a data-aos='fade-right' data-aos-duration="700" href='https://www.elizabethrevestimentos.com.br' target='_blank' className=''>
-                <motion.div
-                  className="cursor-pointer bg-[url('../public/elizabeth.jpg')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{
-                  scale: 0.8,
-                  borderRadius: "24px"
-                }}>
-                </motion.div>
-              </a>
-            </div>
-
-            <div className='flex flex-col items-center'>
               <p data-aos='fade-left' data-aos-duration="700" className='mt-10'>Caminhos da Lapa</p>
               <a data-aos='fade-left' data-aos-duration="700" href='https://caminhosdalapaoficial.com.br/' target='_blank' className=''>
                 <motion.div
-                  className="cursor-pointer bg-[url('../public/caminhosdalapa.jpg')] bg-cover bg-no-repeat bg-left md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
+                  className="cursor-pointer bg-[url('../public/caminhosdalapa.jpg')] bg-cover bg-no-repeat bg-center md:w-[45vw] w-[90vw] md:h-[45vh] h-[25vh] mx-5 my-5 flex justify-center items-center bg-white rounded-3xl"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{
                   scale: 0.8,
