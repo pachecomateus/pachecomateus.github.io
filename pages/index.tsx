@@ -8,14 +8,53 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  // let image = document.getElementsByClassName('parallax');
-  // new SimpleParallax(image);
-
   return (
     <main
       className={`min-h-screen bg-black text-white ${inter.className}`}
     >
       <div className='overflow-hidden'>
+        <div className='flex flex-col justify-center items-center'>
+          <h1 data-aos='fade-up' data-aos-duration="1000" className='mt-[10vh] mb-10 text-4xl'>
+          Ok, então, aqui vai uma lista de 10 razões para querer agredir seu amigo Gustavo:
+          </h1>
+          <div data-aos='fade-up' data-aos-duration="3000">
+            <div >
+              Ele é ruim no FIFA.
+            </div>
+            <div >
+              Ele comeu o último pedaço de pizza.
+            </div>
+            <div >
+              Ele não devolveu o seu jogo favorito há 10 anos.
+            </div>
+            <div >
+              Ele sempre acorda você no meio da noite para falar sobre o seu sonho mais recente.
+            </div>
+            <div >
+              Ele não entende que você precisa de tempo para jogar videogame sozinho.
+            </div>
+            <div >
+              Ele sempre faz piadas ruins e espera que você ria.
+            </div>
+            <div >
+              Ele não respeita o seu espaço pessoal e sempre invade o seu quarto.
+            </div>
+            <div >
+              Ele sempre escolhe o filme que você não quer assistir.
+            </div>
+            <div >
+              Ele não entende que você precisa de tempo para estudar e sempre o distrai.
+            </div>
+            <div >
+              Ele sempre ganha no xadrez e não deixa você ganhar de propósito.
+            </div>
+            <div >
+              Lembre-se, é só uma piada! Não agrida seu amigo de verdade!
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <div className='overflow-hidden'>
         <div className='flex flex-col justify-between items-center h-[100vh]'>
           <h1 data-aos='fade-down' data-aos-duration="1000" className='mt-[35vh] text-9xl'>
             oi!
@@ -260,7 +299,7 @@ export default function Home() {
           </div>
         </div>
 
-      </div>
+      </div> */}
     </main>
   )
 }
